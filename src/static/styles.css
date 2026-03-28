@@ -59,10 +59,11 @@ section h3 {
 
 .activity-card {
   margin-bottom: 15px;
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+  padding: 18px;
+  border: 1px solid #dbe2ff;
+  border-radius: 14px;
+  background: linear-gradient(180deg, #ffffff 0%, #f6f8ff 100%);
+  box-shadow: 0 12px 30px rgba(26, 35, 126, 0.08);
 }
 
 .activity-card h4 {
@@ -72,6 +73,84 @@ section h3 {
 
 .activity-card p {
   margin-bottom: 8px;
+}
+
+.activity-meta {
+  margin-top: 12px;
+}
+
+.participants-section {
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid #dfe5ff;
+}
+
+.participants-heading {
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #1a237e;
+  letter-spacing: 0.02em;
+}
+
+.participants-list {
+  list-style: none;
+  padding-left: 0;
+  color: #24324d;
+}
+
+.participant-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background-color: rgba(219, 226, 255, 0.45);
+}
+
+.participant-email {
+  overflow-wrap: anywhere;
+}
+
+.participant-delete {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
+  border-radius: 999px;
+  border: 1px solid #f1b3bd;
+  background: linear-gradient(180deg, #fff5f6 0%, #ffe6ea 100%);
+  color: #b42318;
+  padding: 0;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+}
+
+.participant-delete:hover {
+  background: linear-gradient(180deg, #ffe8eb 0%, #ffd6dc 100%);
+  box-shadow: 0 8px 18px rgba(180, 35, 24, 0.18);
+  transform: translateY(-1px);
+}
+
+.participant-delete:focus-visible {
+  outline: 3px solid rgba(26, 35, 126, 0.25);
+  outline-offset: 2px;
+}
+
+.participant-delete svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+.empty-participants {
+  color: #6b7280;
+  font-style: italic;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background-color: rgba(107, 114, 128, 0.08);
 }
 
 .form-group {
